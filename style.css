@@ -1,0 +1,72 @@
+html{
+    box-sizing: border-box;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+.card-wrapper{
+    margin: 10px;
+}
+
+.card{
+    width: 280px;
+    height: 50vh;
+    position: relative;
+}
+
+
+.bg{
+    width: inherit;
+    height: inherit;
+    background: url('./HD-wallpaper-joker-2016-awesome-beautiful-love-thumbnail.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    position: relative;
+}
+
+
+.sub-bg{
+    height: 10vh;
+    background-color: gold;
+    width: inherit;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .4s ease-out;
+    z-index: 100;
+}
+
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: inherit;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.39);
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    color: #fff;
+    transition: .4s ease-out;
+    opacity: 0;
+}
+
+
+.card:hover .overlay{
+    transition: .4s ease-in;
+    opacity: 0.8;
+    height: inherit;
+}
+
+.card:hover .sub-bg{
+    height: 20vh;
+    transition: .4s ease-in;
+}
